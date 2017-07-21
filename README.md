@@ -1,5 +1,8 @@
 # React Skeleton
 
+!!! THIS APPROACH IS DEPRECATED: look at this [react-archux-example](https://github.com/archik408/react-archux-example),
+check [store](https://github.com/archik408/react-archux-example/blob/master/client/app/src/store/Store.js) and [unidirectional data flow](https://github.com/archik408/react-archux-example/blob/master/client/app/src/store/Dispatcher.js) implementation: 
+
 > easy start of your prototype
 
 ![logo](./media/logo.png "logo")

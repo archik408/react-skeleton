@@ -9,7 +9,7 @@
   "author": "artur.basak@instinctools.ru",
   "license": "MIT",
   "dependencies": {
-    "axios": "0.14.0",
+    "axios": "0.18.1",
     "history": "2.1.2",
     "lodash": "4.16.4",
     "moment": "2.15.1",

@@ -26,7 +26,8 @@
     "redux-thunk": "2.1.0",
     "scss-flex-grid": "0.3.2",
     "material-design-icons": "3.0.1",
-    "normalize.css": "4.2.0"
+    "normalize.css": "4.2.0",
+    "snyk": "^1.317.0"
   },
   "devDependencies": {
     "autoprefixer": "6.4.1",
@@ -97,7 +98,9 @@
     "test": "mocha --require mock-css-modules --reporter spec .setup.js app/src/**/*.test.js",
     "test-r": "mocha --require mock-css-modules --reporter mocha-simple-html-reporter --reporter-options output=unit-tests-report.html .setup.js app/src/**/*.test.js",
     "build": "cross-env NODE_ENV=production webpack -p --progress",
-    "jsdoc": "jsdoc app/src -r -d docs -R README.md -P package.json"
+    "jsdoc": "jsdoc app/src -r -d docs -R README.md -P package.json",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "pre-commit": [
     "test"
@@ -105,5 +108,6 @@
   "engines": {
     "node": ">=6.9.1",
     "npm": ">=3.10.8"
-  }
+  },
+  "snyk": true
 }
